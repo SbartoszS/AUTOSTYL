@@ -14,7 +14,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('css', function () {
-    return gulp.src('../scss/**/*.scss')
+    return gulp.src('../sass/*.scss')
         .pipe(rename({
             suffix: '.min'
         }))

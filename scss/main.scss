@@ -1,0 +1,19 @@
+@import 'config/base';
+@import 'config/variables';
+@import 'config/mixins';
+
+
+header {
+    background-color: $main-color;
+    width: 100%;
+    height: 50vh;
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+section {
+    height: 30vh;
+    border: 2px solid black;
+}

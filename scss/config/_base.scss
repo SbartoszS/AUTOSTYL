@@ -1,0 +1,19 @@
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// basic style
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+// layout
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0 auto;
+}
