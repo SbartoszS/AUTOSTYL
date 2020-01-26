@@ -3,17 +3,125 @@
 @import 'config/mixins';
 
 
-header {
-    background-color: $main-color;
-    width: 100%;
-    height: 50vh;
+.header {
+    height: 100px;
 
-    h1 {
-        font-size: 40px;
+    @include media(small) {}
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    &__logo {
+        margin-left: 25px;
+
+        &-link {
+            display: block;
+            height: 100%;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        right: 0;
+        height: calc(100% - 100px);
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(-100%);
+
+        .fa-phone,
+        .fa-shopping-cart {
+            padding-right: 3px;
+        }
+
+        &--active {
+            background-color: $main-color;
+            transform: translateX(0%);
+        }
+    }
+
+    &__item {
+        display: flex;
+        height: 20%;
+        width: 100%;
+        list-style: none;
+        border-bottom: 1px solid white;
+        opacity: 0;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: bold;
+        font-size: $menu-font-m;
+    }
+
+
+    &__burger {
+        display: block;
+        width: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+
+        &-line1,
+        &-line2,
+        &-line3 {
+            height: 3px;
+            background-color: $main-color;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        &--toogle .menu__burger-line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        &--toogle .menu__burger-line2 {
+            opacity: 0;
+        }
+
+        &--toogle .menu__burger-line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+}
+
+
+@keyframes menuListFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.banner {
+    background-color: green;
+
+    &--moveBot {
+        margin-top: calc(100vh - 100px);
     }
 }
 
 section {
     height: 30vh;
-    border: 2px solid black;
+    border: 1px solid black;
 }
