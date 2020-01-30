@@ -142,6 +142,10 @@
         @include media(large) {
             color: $main-color;
             font-size: 12px;
+
+            .Phone {
+                animation: ring 3s .7s ease-in-out infinite;
+            }
         }
 
         @include media(xlarge) {
