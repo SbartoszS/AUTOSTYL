@@ -9,7 +9,6 @@ const navSlide = () => {
         nav.classList.toggle('menu__list--active');
         //przemieszczenie pozostalych sekcji
         banner.classList.toggle('banner--moveBot');
-        // headerTop.classList.toogle('sliderBot');
 
         //animacja linkow
         navLinks.forEach((link, index) => {
@@ -17,7 +16,7 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `menuListFade 0.5s ease forwards ${index/7 + 0.3}s`;
+                link.style.animation = `menuListFade 0.3s ease forwards ${index/7 + 0.1}s`;
             }
         });
         //burger animacja
