@@ -101,3 +101,15 @@ $normal-font : 16px;
         transform: rotate(0deg);
     }
 }
+
+@keyframes menuListFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
