@@ -11,7 +11,7 @@
     }
 
     @include media(xxxlarge) {
-        height: calc(50vh - 85px);
+        height: calc(70vh - 85px);
     }
 
     &--moveBot {
@@ -31,7 +31,7 @@
     }
 
     @include media(xxxlarge) {
-        height: calc(50vh - 85px);
+        height: calc(70vh - 85px);
     }
 
     &__slide {
