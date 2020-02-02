@@ -14,7 +14,7 @@ $(document).ready(function () {
         responsive: [{
             breakpoint: 1024,
             settings: {
-
+                draggable: false,
             }
         }],
     });
