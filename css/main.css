@@ -197,6 +197,9 @@ html {
   @media (min-width: 1024px) {
     .banner {
       height: calc(100vh - 85px); } }
+  @media (min-width: 2000px) {
+    .banner {
+      height: calc(50vh - 85px); } }
   .banner--moveBot {
     margin-top: calc(100vh - 85px); }
 
@@ -208,6 +211,9 @@ html {
   @media (min-width: 1024px) {
     .banner-wrapper {
       height: calc(100vh - 85px); } }
+  @media (min-width: 2000px) {
+    .banner-wrapper {
+      height: calc(50vh - 85px); } }
   .banner-wrapper__slide {
     height: 100%;
     width: 100%; }
