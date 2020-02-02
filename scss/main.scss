@@ -151,10 +151,7 @@
         @include media(xlarge) {
             font-size: 14px;
         }
-
-
     }
-
 
     &__burger {
         display: block;
@@ -189,11 +186,4 @@
     }
 }
 
-.banner {
-    background-color: green;
-    height: 50vh;
-
-    &--moveBot {
-        margin-top: calc(100vh - 85px);
-    }
-}
+@import 'components/banner-slide';

@@ -23,5 +23,4 @@ const navSlide = () => {
         burger.classList.toggle('menu__burger--toogle');
     });
 }
-
 navSlide();

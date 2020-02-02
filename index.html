@@ -8,7 +8,10 @@
     <title>Autostyl</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body class="page">
@@ -40,7 +43,47 @@
                 </div>
             </nav>
         </header>
-        <section class="banner">baner</section>
+        <section class="banner">
+            <div class="banner-wrapper">
+                <div class="banner-wrapper__slide fade"><img class="banner-wrapper__img" srcset="
+                        img/resolution_switching/banner-460-250px.jpg 460w,
+                        img/resolution_switching/banner-800-480px.jpg 800w,
+                        img/resolution_switching/banner-1280-800px.jpg 1280w,
+                        img/resolution_switching/banner-1920-1020px.jpg 1920w
+                        " sizes="
+                    (max-width: 460px) 414px,
+                    (max-width: 820px) 738px,
+                    (max-width: 1300px) 1170px,
+                    1920px,
+                    " src="img/resolution_switching/banner-1920-1020px.jpg 1920w" alt="koła i kołpaki">
+                </div>
+                <div class="banner-wrapper__slide fade"><img class="banner-wrapper__img" srcset="
+                    img/resolution_switching/banner2-460-250px.jpg 460w,
+                    img/resolution_switching/banner2-800-480px.jpg 800w,
+                    img/resolution_switching/banner2-1280-800px.jpg 1280w,
+                    img/resolution_switching/banner2-1920-1020px.jpg 1920w
+                    " sizes="
+                (max-width: 460px) 414px,
+                (max-width: 820px) 738px,
+                (max-width: 1300px) 1170px,
+                1920px,
+                " src="img/resolution_switching/banner2-1920-1020px.jpg 1920w" alt="koła i kołpaki">
+                </div>
+                <div class="banner-wrapper__slide fade"><img class="banner-wrapper__img" srcset="
+                    img/resolution_switching/banner3-460-250px.jpg 460w,
+                    img/resolution_switching/banner3-800-480px.jpg 800w,
+                    img/resolution_switching/banner3-1280-800px.jpg 1280w,
+                    img/resolution_switching/banner3-1920-1020px.jpg 1920w
+                    " sizes="
+                (max-width: 460px) 414px,
+                (max-width: 820px) 738px,
+                (max-width: 1300px) 1170px,
+                1920px,
+                " src="img/resolution_switching/banner3-1920-1020px.jpg 1920w" alt="koła i kołpaki">
+                </div>
+
+            </div>
+        </section>
         <main>
             <section>about</section>
             <section>tak</section>
@@ -50,7 +93,11 @@
         </main>
         <footer>copyright</footer>
     </div>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick-active.js"></script>
 </body>
 
 </html>
