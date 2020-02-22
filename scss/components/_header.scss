@@ -132,11 +132,11 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: bold;
-        font-size: $menu-font-m;
+        font-size: $font-normal;
 
         @include media(large) {
             color: $main-color;
-            font-size: 12px;
+            font-size: $font-small;
 
             .Phone {
                 animation: ring 3s .7s ease-in-out infinite;
@@ -144,7 +144,7 @@
         }
 
         @include media(xlarge) {
-            font-size: 14px;
+            font-size: $font-normal;
         }
     }
 
@@ -178,5 +178,99 @@
         &--toogle .menu__burger-line3 {
             transform: rotate(45deg) translate(-5px, -6px);
         }
+    }
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+
+    3% {
+        transform: rotate(30deg);
+    }
+
+    6% {
+        transform: rotate(-30deg);
+    }
+
+    9% {
+        transform: rotate(34deg);
+    }
+
+    12% {
+        transform: rotate(-34deg);
+    }
+
+    15% {
+        transform: rotate(30deg);
+    }
+
+    18% {
+        transform: rotate(-30deg);
+    }
+
+    21% {
+        transform: rotate(26deg);
+    }
+
+    24% {
+        transform: rotate(-26deg);
+    }
+
+    27% {
+        transform: rotate(22deg);
+    }
+
+    30% {
+        transform: rotate(-22deg);
+    }
+
+    33% {
+        transform: rotate(18deg);
+    }
+
+    36% {
+        transform: rotate(-18deg);
+    }
+
+    39% {
+        transform: rotate(14deg);
+    }
+
+    42% {
+        transform: rotate(-14deg);
+    }
+
+    45% {
+        transform: rotate(10deg);
+    }
+
+    48% {
+        transform: rotate(-10deg);
+    }
+
+    51% {
+        transform: rotate(6deg);
+    }
+
+    54% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes menuListFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
     }
 }

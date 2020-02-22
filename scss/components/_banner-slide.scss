@@ -83,12 +83,12 @@
 .slick-dots li button:before {
     font-size: 10px;
     line-height: 20px;
-    color: white;
+    color: $main-white;
     opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #2D4288;
+    color: $main-color;
     font-size: 15px;
     opacity: 1;
 }
