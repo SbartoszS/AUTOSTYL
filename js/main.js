@@ -24,3 +24,14 @@ const navSlide = () => {
     });
 }
 navSlide();
+
+$(document).ready(function () {
+    $(document).click(function () {
+        var pos = $(".about").position();
+
+        $('body,html').animate({
+            scrollTop: pos.top,
+        }, 1000);
+
+    });
+});
