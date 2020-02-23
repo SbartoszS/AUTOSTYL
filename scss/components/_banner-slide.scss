@@ -1,17 +1,55 @@
 .banner {
     height: calc(50vh - 85px);
+    position: relative;
+
+    &__btn {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        background: $main-white;
+        border: none;
+        z-index: 99;
+        outline: none;
+        display: none;
+        transition: all 0.3s ease;
+
+        &:hover .banner__icon {
+            transform: rotate(540deg);
+        }
+    }
+
+    &__icon {
+        color: $main-color;
+        font-size: 18px;
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+    }
 
 
     @media (orientation: landscape) {
         height: calc(100vh - 85px);
+
+        &__btn {
+            display: block;
+        }
     }
 
     @include media(large) {
         height: calc(100vh - 85px);
+
+        &__btn {
+            display: block;
+        }
     }
 
     @include media(xxxlarge) {
         height: calc(70vh - 85px);
+
+        &__btn {
+            display: none;
+        }
     }
 
     &--moveBot {
@@ -64,7 +102,7 @@
 }
 
 .slick-dots {
-    bottom: 5px;
+    bottom: 10px;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -75,20 +113,20 @@
     display: inline-block;
     height: 20px;
     width: 20px;
-    margin: 0 5px;
+    margin: 0 10px;
     padding: 0;
     cursor: pointer;
 }
 
 .slick-dots li button:before {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 20px;
-    color: $main-white;
+    color: black;
     opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
     color: $main-color;
-    font-size: 15px;
+    font-size: 25px;
     opacity: 1;
 }
