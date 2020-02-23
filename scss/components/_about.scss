@@ -4,3 +4,76 @@
 }
 
 @import 'components/contact-main';
+
+.about-info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+    // background-color: #ececec;
+
+    &:nth-last-child(1) {
+        background-color: transparent;
+        background-color: #ececec;
+    }
+
+
+    @include media(large) {
+        flex-direction: row;
+        height: 400px;
+
+        &:nth-last-of-type(1) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__img {
+        width: 300px;
+        margin: 20px 0;
+
+        @media (orientation: landscape) {
+            width: 400px;
+        }
+
+
+        @include media(large) {
+            padding: 0 1.5rem;
+            width: 500px;
+        }
+    }
+
+    &__content {
+        max-width: 800px;
+        width: 100%;
+        margin: 1rem 1rem;
+
+        @include media(large) {
+            width: 50%;
+            padding: 0 1.5rem;
+        }
+
+    }
+
+    &__title {
+        padding: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+
+        @include media(large) {
+            text-align: left;
+        }
+    }
+
+    &__text {
+        padding: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+
+        @include media(large) {
+            text-align: left;
+        }
+    }
+}

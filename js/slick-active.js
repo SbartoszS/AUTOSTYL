@@ -7,7 +7,7 @@ $(document).ready(function () {
         arrows: false,
         pauseOnHover: false,
         pauseOnFocus: false,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         mobileFirst: true,
         fade: true,
         cssEase: 'linear',
