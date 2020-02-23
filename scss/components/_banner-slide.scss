@@ -4,12 +4,12 @@
 
     &__btn {
         position: absolute;
-        bottom: 0px;
-        left: 0px;
+        bottom: 10px;
+        left: 10px;
         width: 50px;
         height: 50px;
         background: $main-white;
-        border: none;
+        border: 1px solid $main-color;
         z-index: 99;
         outline: none;
         display: none;

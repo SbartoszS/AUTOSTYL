@@ -12,7 +12,6 @@
     justify-content: center;
     max-width: 1920px;
     width: 100%;
-    // background-color: #ececec;
 
     &:nth-last-child(1) {
         background-color: transparent;
@@ -27,6 +26,10 @@
         &:nth-last-of-type(1) {
             flex-direction: row-reverse;
         }
+    }
+
+    &__img-wrap {
+        display: none;
     }
 
     &__img {
@@ -48,6 +51,7 @@
         max-width: 800px;
         width: 100%;
         margin: 1rem 1rem;
+        display: none;
 
         @include media(large) {
             width: 50%;
@@ -75,5 +79,23 @@
         @include media(large) {
             text-align: left;
         }
+    }
+}
+
+.about-active {
+    display: block;
+    animation: aboutContentAnimate 1s;
+    animation-fill-mode: both
+}
+
+@keyframes aboutContentAnimate {
+    from {
+        transform: scale(0.6);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
     }
 }
