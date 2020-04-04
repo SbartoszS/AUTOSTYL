@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <title>Autostyl</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -19,7 +20,7 @@
             <nav class="menu">
                 <div class="menu__logo">
                     <a href="index.html" class="menu__logo-link">
-                        <img src="img/logo/logoMain.png" alt="logo" class="menu__logo-image">
+                        <img src="css/img/logo/logoMain.png" alt="logo" class="menu__logo-image">
                     </a>
                 </div>
 
@@ -28,8 +29,8 @@
                     <li class="menu__item"><a href="cooperation.html" class="menu__link">Współpraca</a></li>
                     <li class="menu__item"><a href="gallery.html" class="menu__link">Galeria</a></li>
                     <li class="menu__item"><a href="contact.html" class="menu__link">Kontakt</a></li>
-                    <li class="menu__item"><a href="http://195.238.168.249/zamowienia/" class="menu__link"><i
-                                class=" fas fa-shopping-cart"></i>Sklep</a>
+                    <li class="menu__item"><a href="http://195.238.168.249/zamowienia/" class="menu__link"
+                            target="_blank"><i class=" fas fa-shopping-cart"></i>Sklep</a>
                     </li>
                     <li class="menu__item"><a href="tel://+48603859163" class="menu__link"><i
                                 class="fas fa-phone Phone is-animating"></i>603-859-163</a>
@@ -44,41 +45,21 @@
         </header>
         <section class="banner">
             <div class="banner-wrapper">
-                <div class="banner-wrapper__slide"><img class="banner-wrapper__img" srcset="
-                        img/resolution_switching/banner-460-250px.jpg 400w,
-                        img/resolution_switching/banner-800-480px.jpg 800w,
-                        img/resolution_switching/banner-1280-800px.jpg 1280w,
-                        img/resolution_switching/banner-1920-1020px.jpg 1920w
-                        " sizes="
-                    (max-width: 460px) 414px,
-                    (max-width: 820px) 700px,
-                    (max-width: 1300px) 1170px,
-                    1920px,
-                    " src="img/resolution_switching/banner-1920-1020px.jpg 1920w" alt="koła i kołpaki" loading="lazy">
+                <div class="banner-wrapper__slide banner-wrapper__slide--img1">
+                    <h1 class="banner-wrapper__text banner-wrapper__text--txt1">Auto-Styl</h1>
+                    <h2 class="banner-wrapper__text banner-wrapper__text--txt2">Hurtownia motoryzacyjna</h2>
                 </div>
-                <div class="banner-wrapper__slide"><img class="banner-wrapper__img" srcset="
-                    img/resolution_switching/banner2-460-250px.jpg 400w,
-                    img/resolution_switching/banner2-800-480px.jpg 800w,
-                    img/resolution_switching/banner2-1280-800px.jpg 1280w,
-                    img/resolution_switching/banner2-1920-1020px.jpg 1920w
-                    " sizes="
-                (max-width: 460px) 414px,
-                (max-width: 820px) 700px,
-                (max-width: 1300px) 1170px,
-                1920px,
-                " src="img/resolution_switching/banner2-1920-1020px.jpg 1920w" alt="koła i kołpaki" loading="lazy">
+                <div class="banner-wrapper__slide banner-wrapper__slide--img2">
+                    <h1 class="banner-wrapper__text banner-wrapper__text--whiteText1">Płyny i oleje</h1>
+                    <h2 class="banner-wrapper__text banner-wrapper__text--whiteText2">najlepszych marek</h2>
                 </div>
-                <div class="banner-wrapper__slide"><img class="banner-wrapper__img" srcset="
-                    img/resolution_switching/banner3-460-250px.jpg 400w,
-                    img/resolution_switching/banner3-800-480px.jpg 800w,
-                    img/resolution_switching/banner3-1280-800px.jpg 1280w,
-                    img/resolution_switching/banner3-1920-1020px.jpg 1920w
-                    " sizes="
-                (max-width: 460px) 414px,
-                (max-width: 820px) 700px,
-                (max-width: 1300px) 1170px,
-                1920px,
-                " src="img/resolution_switching/banner3-1920-1020px.jpg 1920w" alt="koła i kołpaki" loading="lazy">
+                <div class="banner-wrapper__slide banner-wrapper__slide--img3">
+                    <h1 class="banner-wrapper__text banner-wrapper__text--blackText1">Asortyment</h1>
+                    <h2 class="banner-wrapper__text banner-wrapper__text--blackText2">od najlepszych dostawców</h2>
+                </div>
+                <div class="banner-wrapper__slide banner-wrapper__slide--img4">
+                    <h1 class="banner-wrapper__text banner-wrapper__text--blackText1">Uniwersalne</h1>
+                    <h2 class="banner-wrapper__text banner-wrapper__text--blackText2">płyny do dezynfekcji</h2>
                 </div>
             </div>
             <button class="banner__btn"><i class="fas fa-chevron-up banner__icon"></i></button>
@@ -133,7 +114,7 @@
                     </div>
                     <div class="about-info about-info--first">
                         <div class="about-info__img-wrap about-info__img-wrap--first">
-                            <img class="about-info__img" src="img/other/contact.jpg" alt="">
+                            <img class="about-info__img" src="css/img/other/contact.jpg" alt="">
                         </div>
                         <div class="about-info__content about-info__content--first">
                             <h2 class="about-info__title">O FIRMIE</h2>
@@ -148,7 +129,7 @@
                     </div>
                     <div class="about-info about-info--second">
                         <div class="about-info__img-wrap about-info__img-wrap--second">
-                            <img class="about-info__img" src="img/other/upgrade.jpg" alt="">
+                            <img class="about-info__img" src="css/img/other/upgrade.jpg" alt="">
                         </div>
                         <div class="about-info__content about-info__content--second">
                             <h2 class="about-info__title">O FIRMIE</h2>
@@ -163,8 +144,64 @@
                     </div>
                 </div>
             </section>
-            <section>tak</section>
-            <section>ttttt</section>
+            <section class="statistic">
+                <div class="statistic-wrapper">
+                    <h2 class="statistic-wrapper__title"><strong>Auto-Styl w liczbach</strong></h2>
+                    <div class="statistic-wrapper__column">
+                        <div class="statistic-wrapper__number num1js">0</div>
+                        <h6 class="statistic-wrapper__text">lat na rynku</h6>
+                    </div>
+                    <div class="statistic-wrapper__column">
+                        <div class="statistic-wrapper__number num2js">0</div>
+                        <h6 class="statistic-wrapper__text">marek w ofercie</h6>
+                    </div>
+                    <div class="statistic-wrapper__column">
+                        <div class="statistic-wrapper__number num3js">0</div>
+                        <h6 class="statistic-wrapper__text">artykułów</h6>
+                    </div>
+            </section>
+            <!-- <section class="offers">
+                <h2 class="offers__Title">Dobierz swój komponent :</h2>
+                <div class="wrap-offers">
+                    <div class="offer">
+                        <a class="offer__link"
+                            href="https://applications.castrol.com/oilselector/pl_pl/c/search?fbclid=IwAR0cGDpfoWtBGckFzUIE7zS4sKmSHk22aUm9qHyW_a1s10rJ482JWRV-lsM">
+                            <img class="offer__img" src="img/Logo1/castrol.png" alt="Dobierz oleje">
+                            <p class="offer__text">
+                                Oleje
+                            </p>
+                        </a>
+                    </div>
+                    <div class="offer">
+                        <a class="offer__link"
+                            href="http://motgum.com/katalog-produktow/wycieraczki-%20szyb-samochodowych/">
+                            <img class="offer__img" src="img/Logo1/motgum.png" alt="Dobierz wycieraczki">
+                            <p class="offer__text">Wycieraczki</p>
+                        </a>
+                    </div>
+                    <div class="offer">
+                        <a class="offer__link"
+                            href="https://www.hella.com/MicroSite/bulbs/pl/index_pkw.html?fbclid=IwAR1lizw2FtmWaFOjRBay6v2tH1d9zWD_-8wd2AcDVqMX5VjOxslGbXTG4LY">
+                            <img class="offer__img" src="img/Logo1/hella.png" alt="Dobierz żarówki">
+                            <p class="offer__text">
+                                Żarówki
+                            </p>
+                        </a>
+                    </div>
+                    <div class="offer">
+                        <a class="offer__link" href="http://www.matgum.pl/oferta.html#dobor-zestawow">
+                            <img class="offer__img" src="img/Logo1/matgum.png" alt="Dobierz dywany">
+                            <p class="offer__text">Dywany</p>
+                        </a>
+                    </div>
+                    <div class="offer">
+                        <a class="offer__link" href="https://www.polmostrow.pl/">
+                            <img class="offer__img" src="img/Logo1/polmo.png" alt="Dobierz tłumiki">
+                            <p class="offer__text">Tłumiki</p>
+                        </a>
+                    </div>
+                </div>
+            </section> -->
             <section>43232</section>
             <section>map</section>
         </main>
