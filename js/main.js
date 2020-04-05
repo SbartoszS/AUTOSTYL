@@ -60,7 +60,7 @@ $(document).ready(function () {
     function IncrementCount() {
         $('.num1js').text(start);
         start = start + 1;
-        t = setTimeout(IncrementCount, 10);
+        t = setTimeout(IncrementCount, 20);
         if (start === 26) {
             clearTimeout(t);
         }
@@ -69,7 +69,7 @@ $(document).ready(function () {
     function IncrementCount2() {
         $('.num2js').text('+ ' + start2);
         start2 = start2 + 2;
-        c = setTimeout(IncrementCount2, 10);
+        c = setTimeout(IncrementCount2, 20);
         if (start2 >= 101) {
             clearTimeout(c);
         }
@@ -78,7 +78,7 @@ $(document).ready(function () {
     function IncrementCount3() {
         $('.num3js').text('+ ' + start3);
         start3 = start3 + 200;
-        d = setTimeout(IncrementCount3, 10);
+        d = setTimeout(IncrementCount3, 20);
         if (start3 >= 10001) {
             clearTimeout(d);
         }
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
 
     $(window).on('scroll', function () {
-        let posStat = $(".statistic").position().top + $(".statistic").outerHeight(true) - 100;
+        let posStat = $(".statistic").position().top + $(".statistic").outerHeight(true) - 80;
         let log1 = $(window).scrollTop() + $(window).height();
 
         if (log1 >= posStat && !flagCount) {

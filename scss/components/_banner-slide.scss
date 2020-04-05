@@ -44,10 +44,6 @@
         }
     }
 
-    @include media(xxxlarge) {
-        height: calc(90vh - 85px);
-    }
-
     &--moveBot {
         margin-top: calc(100vh - 85px);
     }
@@ -62,10 +58,6 @@
 
     @include media(large) {
         height: calc(100vh - 85px);
-    }
-
-    @include media(xxxlarge) {
-        height: calc(90vh - 85px);
     }
 
     &__slide {

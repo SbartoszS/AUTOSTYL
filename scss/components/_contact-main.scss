@@ -5,6 +5,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    font-family: 'Do Hyeon', sans-serif;
+
 
     @include media(large) {
         flex-direction: row;
@@ -50,7 +52,7 @@
         }
 
         @include media(xlarge) {
-            font-size: $font-normal
+            font-size: $font-normal;
         }
     }
 
