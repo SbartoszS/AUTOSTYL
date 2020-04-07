@@ -1,0 +1,66 @@
+@import 'config/variables';
+@import 'config/mixins';
+
+.contact-main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Do Hyeon', sans-serif;
+
+
+    @include media(large) {
+        flex-direction: row;
+        padding: 20px 0;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 3px solid $main-gray;
+        border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+        box-shadow: inset 0 0 10px $main-gray;
+        margin: 20px;
+        max-width: 400px;
+        height: 130px;
+
+        &:nth-child(1) {
+            align-items: center;
+        }
+
+    }
+
+    &__title {
+        align-self: flex-start;
+        padding-top: 10px;
+        width: 100%;
+        font-size: $font-normal;
+        text-align: center;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 3px;
+    }
+
+    &__text {
+        padding: 10px;
+        font-size: $font-normal;
+        list-style: none;
+
+        @include media(large) {
+            font-size: 13px;
+        }
+
+        @include media(xlarge) {
+            font-size: $font-normal;
+        }
+    }
+
+    &__item {
+        padding: 3px;
+    }
+
+    &__icon {
+        margin-right: 7px;
+    }
+}

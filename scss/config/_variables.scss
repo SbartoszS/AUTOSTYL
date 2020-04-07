@@ -1,0 +1,19 @@
+// przejścia media-query
+
+$breakpoints: (xsmall: (min-width: 460px),
+    small: (min-width: 640px),
+    medium: (min-width: 800px),
+    large: (min-width: 1024px),
+    xlarge: (min-width: 1200px),
+    xxlarge: (min-width: 1440px),
+    xxxlarge: (min-width: 1919px));
+
+// colors
+$main-color: #2D4288;
+$main-white: #ffffff;
+$main-gray: #777777;
+
+//fonts
+$font-small : 12px;
+$font-normal : 14px;
+$font-big : 16px;

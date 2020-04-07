@@ -1,0 +1,71 @@
+.statistic-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+    background-image: url('../css/img/other/statistic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: $main-white;
+    font-family: 'Do Hyeon', sans-serif;
+
+    @media (orientation: landscape) {
+        height: 150vh;
+    }
+
+    @include media(large) {
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+
+    &__title {
+        font-size: 25px;
+        margin: 10px 15px;
+        padding: 0 5px;
+        text-transform: uppercase;
+        margin-bottom: -30px;
+        text-align: center;
+
+        @include media(large) {
+            align-self: flex-start;
+            flex-basis: 100%;
+            font-size: 40px;
+            margin: 30px 15px 0 15px;
+            padding: 10px 20px;
+        }
+    }
+
+    &__column {
+        padding: 0px 15px;
+
+        @include media(large) {
+            flex-basis: 33%;
+            margin-top: -20px;
+            padding: 0px 15px;
+        }
+    }
+
+    &__number {
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    &__text {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 300;
+
+    }
+}

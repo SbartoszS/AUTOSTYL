@@ -1,0 +1,284 @@
+.banner {
+    height: calc(50vh - 85px);
+    position: relative;
+
+    &__btn {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+        background: $main-white;
+        border: 1px solid $main-color;
+        z-index: 99;
+        outline: none;
+        display: none;
+        transition: all 0.3s ease;
+
+        &:hover .banner__icon {
+            transform: rotate(540deg);
+        }
+    }
+
+    &__icon {
+        color: $main-color;
+        font-size: 18px;
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+    }
+
+
+    @media (orientation: landscape) {
+        height: calc(100vh - 85px);
+
+        &__btn {
+            display: block;
+        }
+    }
+
+    @include media(large) {
+        height: calc(100vh - 85px);
+
+        &__btn {
+            display: block;
+        }
+    }
+
+    &--moveBot {
+        margin-top: calc(100vh - 85px);
+    }
+}
+
+.banner-wrapper {
+    height: 100%;
+
+    @media (orientation: landscape) {
+        height: calc(100vh - 85px);
+    }
+
+    @include media(large) {
+        height: calc(100vh - 85px);
+    }
+
+    &__slide {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 0%;
+        width: 100%;
+        height: 100%;
+
+
+        &--img1 {
+            background-image: url('../css/img/resolution_switching/banner-1920-1020px.jpg');
+
+            @include media(xlarge) {
+                background-position: center 30%;
+            }
+        }
+
+        &--img2 {
+            background-image: url('../css/img/resolution_switching/banner2-1920-1020px.jpg');
+
+            @include media(xlarge) {
+                background-position: center 50%;
+            }
+
+            @include media(xxxlarge) {
+                background-position: center 55%;
+            }
+        }
+
+        &--img3 {
+            background-image: url('../css/img/resolution_switching/banner3-1920-1020px.jpg');
+
+            @include media(large) {
+                background-position: center 20%;
+            }
+
+            @include media(xxxlarge) {
+                background-position: center 45%;
+            }
+        }
+
+        &--img4 {
+            background-image: url('../css/img/resolution_switching/1.jpg');
+
+            @include media(xlarge) {
+                background-position: center 55%;
+            }
+
+            @include media(xxxlarge) {
+                background-position: center 55%;
+            }
+        }
+    }
+
+    &__text {
+        position: absolute;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: 'Do Hyeon', sans-serif;
+        font-weight: 700;
+
+        &--txt1 {
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $main-color;
+            background-color: rgba($color: white, $alpha: 1);
+            line-height: 50px;
+            width: 180px;
+            height: 50px;
+            font-size: 30px;
+
+            @include media(large) {
+                top: 100px;
+                left: 50px;
+                transform: unset;
+                font-size: 50px;
+                line-height: 80px;
+                width: 350px;
+                height: 80px;
+            }
+        }
+
+        &--txt2 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba($color: $main-color, $alpha: 0.9);
+            line-height: 40px;
+            width: 250px;
+            height: 40px;
+            letter-spacing: 2px;
+            font-size: 18px;
+
+            @include media(large) {
+                top: 200px;
+                left: 50px;
+                transform: unset;
+                font-size: 50px;
+                line-height: 80px;
+                width: 700px;
+                height: 80px;
+            }
+        }
+
+        &--whiteText1 {
+            color: $main-color;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @include media(large) {
+                top: 80px;
+                left: 40px;
+                transform: unset;
+                font-size: 50px;
+            }
+        }
+
+        &--whiteText2 {
+            color: $main-color;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+
+            @include media(large) {
+                top: 140px;
+                left: 40px;
+                transform: unset;
+                font-size: 50px;
+                width: 600px;
+            }
+        }
+
+        &--blackText1 {
+            color: white;
+            background-color: rgba($color: $main-color, $alpha: 0.8);
+            top: 10px;
+            left: 20px;
+            padding: 0 30px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+
+            @include media(large) {
+                top: 40px;
+                left: 40px;
+                font-size: 50px;
+                height: 60px;
+                line-height: 60px;
+            }
+        }
+
+        &--blackText2 {
+            color: white;
+            background-color: rgba($color: $main-color, $alpha: 0.8);
+            top: 60px;
+            left: 20px;
+            padding: 0 20px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+
+            @include media(large) {
+                top: 120px;
+                left: 40px;
+                font-size: 50px;
+                height: 60px;
+                line-height: 60px;
+            }
+        }
+    }
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-list.draggable {
+    height: 100%;
+}
+
+.slick-track {
+    height: 100%;
+}
+
+/* Dots-custom */
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-dots {
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $main-color;
+    font-size: 25px;
+    opacity: 1;
+}
