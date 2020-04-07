@@ -652,7 +652,7 @@ html {
 .adv {
   background-color: #ececec;
   background-color: rgba(255, 255, 255, 0.79);
-  padding: 2% 0; }
+  padding: 4% 0; }
 
 .adv-wrapper__slide {
   height: 70px;
@@ -670,3 +670,7 @@ html {
   @media (min-width: 1200px) {
     .adv-wrapper img {
       width: 120px; } }
+
+#map {
+  height: 400px;
+  width: 100%; }

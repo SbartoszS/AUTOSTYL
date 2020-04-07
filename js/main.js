@@ -69,7 +69,7 @@ $(document).ready(function () {
     function IncrementCount2() {
         $('.num2js').text('+ ' + start2);
         start2 = start2 + 2;
-        c = setTimeout(IncrementCount2, 20);
+        c = setTimeout(IncrementCount2, 10);
         if (start2 >= 101) {
             clearTimeout(c);
         }
@@ -78,7 +78,7 @@ $(document).ready(function () {
     function IncrementCount3() {
         $('.num3js').text('+ ' + start3);
         start3 = start3 + 200;
-        d = setTimeout(IncrementCount3, 20);
+        d = setTimeout(IncrementCount3, 10);
         if (start3 >= 10001) {
             clearTimeout(d);
         }
@@ -96,5 +96,32 @@ $(document).ready(function () {
             flagCount = !flagCount;
         }
     });
-
 });
+
+function initMap() {
+    var uluru = {
+        lat: 50.06670,
+        lng: 22.047537
+    };
+
+    var map = new google.maps.Map(
+        document.getElementById('map'), {
+            zoom: 17,
+            center: uluru
+        });
+    var contentString = 'Ul.Załęska 102, <br /> 35-322 Rzeszów <br /> Auto-styl Rzeszów';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 500
+    });
+
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker);
+    });
+}
