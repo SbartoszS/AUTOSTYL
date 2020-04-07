@@ -1,0 +1,33 @@
+.adv {
+    background-color: #ececec;
+    background-color: rgba(255, 255, 255, 0.79);
+    padding: 2% 0;
+}
+
+.adv-wrapper {
+
+    &__slide {
+        height: 70px;
+        margin: 0 20px;
+
+        @include media(xlarge) {
+            height: 60px;
+        }
+    }
+
+
+    img {
+        height: 100%;
+        width: 130px;
+        filter: grayscale(100%);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+
+
+        @include media(xlarge) {
+            width: 120px;
+        }
+    }
+}

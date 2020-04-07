@@ -625,12 +625,16 @@ html {
       transform: scale(1.2); }
     .offer:hover .offer__text {
       background-color: #150e35; } }
+  .offer__link {
+    display: block;
+    overflow: hidden; }
   .offer__img {
-    width: 180px;
-    height: auto; }
+    width: 200px;
+    height: 120px; }
     @media (min-width: 1024px) {
       .offer__img {
-        width: 220px; } }
+        width: 220px;
+        object-fit: cover; } }
   .offer__text {
     position: absolute;
     bottom: 0%;
@@ -644,3 +648,25 @@ html {
     font-size: 20px;
     letter-spacing: 1px;
     color: white; }
+
+.adv {
+  background-color: #ececec;
+  background-color: rgba(255, 255, 255, 0.79);
+  padding: 2% 0; }
+
+.adv-wrapper__slide {
+  height: 70px;
+  margin: 0 20px; }
+  @media (min-width: 1200px) {
+    .adv-wrapper__slide {
+      height: 60px; } }
+
+.adv-wrapper img {
+  height: 100%;
+  width: 130px;
+  filter: grayscale(100%); }
+  .adv-wrapper img:hover {
+    filter: grayscale(0); }
+  @media (min-width: 1200px) {
+    .adv-wrapper img {
+      width: 120px; } }
