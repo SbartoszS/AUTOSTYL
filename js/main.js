@@ -67,7 +67,7 @@ $(document).ready(function () {
     }
 
     function IncrementCount2() {
-        $('.num2js').text('+ ' + start2);
+        $('.num2js').text(start2 + ' +');
         start2 = start2 + 2;
         c = setTimeout(IncrementCount2, 10);
         if (start2 >= 101) {
@@ -76,7 +76,7 @@ $(document).ready(function () {
     }
 
     function IncrementCount3() {
-        $('.num3js').text('+ ' + start3);
+        $('.num3js').text(start3 + ' +');
         start3 = start3 + 200;
         d = setTimeout(IncrementCount3, 10);
         if (start3 >= 10001) {

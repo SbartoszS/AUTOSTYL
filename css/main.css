@@ -656,7 +656,8 @@ html {
   padding: 4% 0; }
 
 .adv-wrapper__slide {
-  overflow: hidden;
+  outline: none;
+  border: none;
   height: 70px;
   margin: 0 20px; }
   @media (min-width: 1200px) {
@@ -687,7 +688,7 @@ html {
   align-items: center;
   color: white;
   background-color: #2D4288;
-  background-image: linear-gradient(141deg, #2D4288 0%, #6b7ebb 61%, #3b4f92 75%); }
+  background-image: linear-gradient(141deg, #2D4288 0%, #6b7ebb 61%, #3b4f92 70%); }
   @media (min-width: 1024px) {
     .footer-wrapper {
       flex-direction: row;
@@ -722,7 +723,8 @@ html {
   display: block;
   width: 100%;
   color: white;
-  font-size: 12px; }
+  font-size: 12px;
+  padding: 2px; }
 
 .footer-madeBy {
   position: relative;
