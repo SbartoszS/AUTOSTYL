@@ -60,7 +60,7 @@ $(document).ready(function () {
     function IncrementCount() {
         $('.num1js').text(start);
         start = start + 1;
-        t = setTimeout(IncrementCount, 20);
+        t = setTimeout(IncrementCount, 10);
         if (start === 26) {
             clearTimeout(t);
         }
