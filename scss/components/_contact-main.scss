@@ -1,6 +1,11 @@
 @import 'config/variables';
 @import 'config/mixins';
 
+.coop-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 .contact-main {
     margin: 0 auto;
     display: flex;

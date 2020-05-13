@@ -51,3 +51,19 @@ function initMap() {
         infowindow.open(map, marker);
     });
 }
+
+//funkcja chowająca i pokazująca przycisk arrow po przewinięciu 100 px
+$(window).scroll(function () {
+    if ($(this).scrollTop() >= 100) {
+        $('#return-top').fadeIn(200);
+    } else {
+        $('#return-top').fadeOut(200);
+    }
+});
+
+//funcja click na przycisku skrolująca na początek strony
+$('#return-top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500);
+});
