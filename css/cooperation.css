@@ -27,7 +27,8 @@ html {
   display: none;
   z-index: 99;
   transition: all 0.3s ease;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 #return-top i {
   color: #fff;
